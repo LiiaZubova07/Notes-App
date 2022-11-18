@@ -18,6 +18,7 @@ function createNote(title, text) {
 <button class ='note-delete'><i class="fa-solid fa-trash"></i></button>
 </div>
 	</div>
+	<p id = "note-text">${title}</p>
 	<textarea id = 'note-textarea' class= 'hidden'>${text}</textarea>`;
 
   const editBtn = noteEl.querySelector('.note-edit');
