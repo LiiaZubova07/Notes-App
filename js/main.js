@@ -10,8 +10,10 @@ function createNote(title, text) {
 	<div class = 'note-header'>
 <p>${title}</p>
 <div class = "note-actions">
-<button class = 'note-edit'></button>
-<button class = 'note-delete'></button>
+<button class = 'note-edit'><i class="fa-regular fa-pen-to-square"></i></button>
+<button class = 'note-delete'><i class="fa-regular fa-trash"></i></button>
 </div>
-	</div>`;
+	</div>
+	
+	<p id = 'note-description'>${text}</p>`;
 }
