@@ -18,10 +18,23 @@ function createNote(title, text) {
 	</div>
 	
 	<textarea id = 'note-textarea' class= 'hidden'>${text}</textarea>`;
+
+	
+
+  const editBtn = noteEl.querySelector('.note-edit');
+  const deleteBtn = noteEl.querySelector('.note-delete');
+
+  editBtn.addEventListener('click', (e) => {
+
+  });
+  deleteBtn.addEventListener('click', (e) => {
+noteEl.remove();
+  });
+
+  return noteEl;
 }
 
 addBtn.addEventListener('click', (e) => {
   const el = createNote('Заголовок', 'Ваш текст');
   notesEl.appendChild(el);
 });
-
